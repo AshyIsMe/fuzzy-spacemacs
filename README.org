@@ -1,0 +1,35 @@
+
+* fzf.vim is love, fzf.vim is life
+
+... But spacemacs is how we'll get to Mars.
+
+The Helm completion engine might aswell be Microsoft Clippy so I'm using Ivy instead.
+
+
+| Command           | List                                                              | Spacemacs Command                      | Spacemacs Comment              |
+| =:Files [PATH]=   | Files (similar to =:FZF=)                                         | counsel-file-jump                      |                                |
+| =:GFiles [OPTS]=  | Git files (=git ls-files=)                                        | counsel-projectile-find-file (SPC p f) | projectile requires a git repo |
+| =:GFiles?=        | Git files (=git status=)                                          |                                        |                                |
+| =:Buffers=        | Open buffers                                                      | counsel-switch-buffer                  |                                |
+| =:Colors=         | Color schemes                                                     | counsel-load-theme (SPC T s)           |                                |
+| =:Ag [PATTERN]=   | [[https://github.com/ggreer/the_silver_searcher][ag]] search result (=ALT-A= to select all, =ALT-D= to deselect all) | counsel-ag                             |                                |
+| =:Rg [PATTERN]=   | [[https://github.com/BurntSushi/ripgrep][rg]] search result (=ALT-A= to select all, =ALT-D= to deselect all) | counsel-rg                             |                                |
+| =:Lines [QUERY]=  | Lines in loaded buffers                                           | swiper-all                             | Similar, jumps to line instead |
+| =:BLines [QUERY]= | Lines in the current buffer                                       | swiper                                 | Similar, jumps to line instead |
+| =:Tags [QUERY]=   | Tags in the project (=ctags -R=)                                  |                                        |                                |
+| =:BTags [QUERY]=  | Tags in the current buffer                                        |                                        |                                |
+| =:Marks=          | Marks                                                             |                                        |                                |
+| =:Windows=        | Windows                                                           |                                        |                                |
+| =:Locate PATTERN= | =locate= command output                                           | counsel-locate (SPC f L)               |                                |
+| =:History=        | =v:oldfiles= and open buffers                                     | counsel-recentf (SPC f r)              |                                |
+| =:History:=       | Command history                                                   | counsel-command-history                |                                |
+| =:History/=       | Search history                                                    |                                        |                                |
+| =:Snippets=       | Snippets ([[https://github.com/SirVer/ultisnips][UltiSnips]])                                              |                                        |                                |
+| =:Commits=        | Git commits (requires [[https://github.com/tpope/vim-fugitive][fugitive.vim]])                               | counsel-git-log                        |                                |
+| =:BCommits=       | Git commits for the current buffer                                |                                        |                                |
+| =:Commands=       | Commands                                                          | SPC SPC                                | counsel or something else?     |
+| =:Maps=           | Normal mode mappings                                              | describe-bindings (SPC ?)              |                                |
+| =:Helptags=       | Help tags [[#helptags][1]]                                                       |                                        |                                |
+| =:Filetypes=      | File types                                                        |                                        |                                |
+|                   |                                                                   |                                        |                                |
+
